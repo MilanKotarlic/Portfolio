@@ -1,0 +1,66 @@
+@mixin clearfix {
+    &::after {
+        content: '';
+        display:table;
+        clear:both;
+    }
+}
+
+//media querry manager 
+/*
+0 - 600px: phone 
+600 - 900px: tablet in portret mode 
+900 - 1200px: tablet in landscape
+1200 - 1800px: is where normal styles apply 
+1800 +: big screen 
+*/
+
+@mixin mq($value, $constraint: max, $feature: width) {
+     @media screen and(#{$constraint}-#{$feature}: $value + px) {
+        @content;
+    }
+}
+@mixin mq-large($value, $constraint: min, $feature: width) {
+    @media screen and(#{$constraint}-#{$feature}: $value + px) {
+       @content;
+   }
+}
+
+
+
+@mixin center($direction: xy, $position: absolute) {
+    position: $position;
+    @if ($direction == 'x') {
+        left: 50%;
+        transform: translateX(-50%);
+    } @else if ($direction == 'y') {
+        top: 50%;
+        transform: translateY(-50%)
+    } @else {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

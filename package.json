@@ -1,0 +1,21 @@
+{
+  "name": "natours1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Milan Kotarlic",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-watch-sass": "^1.4.1",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.5"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.2.0"
+  },
+  "description": ""
+}
