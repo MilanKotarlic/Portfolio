@@ -711,6 +711,26 @@ body {
   top: 20%;
   animation: animatePreloader 0.5s infinite linear; }
 
+.image-slider {
+  background-color: #1d1d1d;
+  height: 45rem;
+  padding: 5rem; }
+  .image-slider .image-slider__box {
+    height: 30rem;
+    width: 70%;
+    margin: 0 auto;
+    transition: ease; }
+    .image-slider .image-slider__box .image-slider__img {
+      object-fit: cover;
+      object-position: center center;
+      width: 20rem;
+      height: 30rem;
+      margin-top: 2rem;
+      z-index: 1000;
+      transition: ease; }
+  .image-slider .slick-active {
+    transform: scale(1.5); }
+
 .header {
   height: 80rem;
   background-image: linear-gradient(to right bottom, rgba(56, 56, 56, 0.8), rgba(17, 17, 17, 0.8)), url(../img/hero.jpg);
