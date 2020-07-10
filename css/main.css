@@ -200,8 +200,14 @@ body {
   box-shadow: 0px -4px 40px 15px rgba(0, 0, 0, 0.75); }
 
 .section-stories {
+  display: flex;
+  flex-direction: column;
   padding: 15rem 0;
-  position: relative; }
+  position: relative;
+  background-color: rgba(56, 56, 56, 0.7); }
+  .section-stories .heading-secondary {
+    margin-left: 5rem;
+    margin-bottom: 5rem; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -426,21 +432,27 @@ body {
       align-self: center; }
 
 .story {
-  width: 75%;
+  width: 50%;
   padding-left: 9rem;
-  margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 3px;
   padding: 6rem;
   transform: skewX(-12deg);
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin-bottom: 5rem; }
   .story:hover .story__person {
     top: 50%;
     opacity: 1; }
   .story:hover .story__image {
     transform: scale(0.95) translateX(-4rem);
     filter: blur(3px) brightness(80%); }
+  .story .heading-secondary {
+    margin-left: 5rem; }
+  .story--1 {
+    margin-left: 15rem; }
+  .story--2 {
+    margin-left: 30rem; }
   .story__person {
     position: absolute;
     top: 100%;
@@ -486,7 +498,6 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: .15;
   overflow: hidden; }
 
 .bg-video__content {
@@ -600,34 +611,35 @@ body {
     transition: all .5s .2s;
     opacity: 0; }
   .popup .popup__content-left {
-    width: 33.333333%;
-    display: table-cell;
-    vertical-align: middle; }
+    display: flex;
+    flex-direction: column;
+    width: 33.333333%; }
   .popup .popup__content-image {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: 50%; }
   .popup .popup__content-right {
-    padding: 14rem 5rem 5rem;
-    width: 66.6666667%;
-    display: table-cell;
-    vertical-align: middle; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 66.6666667%; }
+    .popup .popup__content-right .btn, .popup .popup__content-right .heading-secondary {
+      align-self: flex-start; }
   .popup .popup__content-text {
     font-size: 1.4rem;
     margin-bottom: 2rem;
     column-count: 2;
     column-gap: 4rem;
-    column-rule: 1px solid #d4d4d4;
-    -moz-hyphens: manual;
-    -ms-hyphens: manual;
-    -webkit-hyphens: manual;
-    hyphens: manual; }
+    column-rule: 1px solid #d4d4d4; }
   .popup .popup-close {
     position: absolute;
     top: 25px;
     right: 25px;
     font-size: 2rem;
     text-decoration: none;
-    font-weight: 900; }
+    font-weight: 900;
+    z-index: 10; }
     .popup .popup-close:hover {
       color: #1d1d1d; }
 
