@@ -57,8 +57,8 @@
     height: 5rem;
     top: 6.8rem;
     left: 16rem;
-    animation-name: moveInLeftAndGoRight;
-    animation-duration: 8s;
+    animation-name: moveInLeftAndDisappear;
+    animation-duration: 3s;
     animation-delay: 2.3s;
     animation-fill-mode: backwards;
     animation-timing-function: cubic-bezier(1,-0.14,1,-0.03);
@@ -89,4 +89,22 @@
     border-left: 0;
     margin-top: -1rem;
     margin-left: 0rem;
+}
+
+.speech-bubble--second {
+    animation-delay: 4s;
+    position: absolute;
+    top: 6.8rem;
+    left: 16rem;
+    animation-duration: 10s;
+    background-color: $color-tertiary-light;
+
+    .speech-bubble__text {
+        font-size: 1.5rem;
+    }
+
+}
+
+.speech-bubble--second:after {
+    border-right-color: $color-tertiary-light;
 }

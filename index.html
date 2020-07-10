@@ -41,36 +41,35 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Technologies</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>About me</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact</a></li>
+                <li class="navigation__item"><a href="#header" class="navigation__link" id="butTriggerChange" onClick="checkAll()"><span>01</span>Home</a></li>
+                <li class="navigation__item"><a href="#section-features" class="navigation__link" onClick="checkAll()"><span>02</span>Technologies</a></li>
+                <li class="navigation__item"><a href="#section-about" class="navigation__link" onClick="checkAll()"><span>03</span>About me</a></li>
+                <li class="navigation__item"><a href="#section-story" class="navigation__link" onClick="checkAll()"><span>04</span>Stories</a></li>
+                <li class="navigation__item"><a href="#footer" class="navigation__link" onClick="checkAll()"><span>05</span>Contact</a></li>
             </ul>
         </nav>
     </div>
-
-
-
     <header class="header" id="header">
         <div class="header__logo-box">
-           <a href="index.html"> <img src="img/Photo_094.jpg" alt="Logo" class="header__logo">
+           <a href="assets/Milan.Kotarli-CV.pdf" target="_blank"><img src="img/Photo_094.jpg" alt="Logo" class="header__logo">
            </a>
         </div>
         <div class="speech-bubble">
           <p class="speech-bubble__text"><span>Hello</span><span>World</span></p>
-          
         </div>
+        <div class="speech-bubble speech-bubble--second">
+            <p class="speech-bubble__text"><span>Click on</span><span>me for CV</span></p>
+          </div>
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--main"> Welcome</span>
                 <span class="heading-primary--sub">to my portfolio page</span>
             </h1>
-            <a href="#section-projects" class="btn btn--alt btn--animation">Learn about me</a>
+            <a href="#section-about" class="btn btn--alt btn--animation">Learn about me</a>
         </div>
     </header>
     <main>
-        <section class="section-features">
+        <section class="section-features"  id="section-features">
             <h2 class="heading-secondary u-margin-bottom-big">
                 Technologies and tools
             </h2>
@@ -266,16 +265,12 @@
                                 <a href="#popup" class="btn btn--alt">Check it!</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
-            <a href="#" class="btn btn--green btn--animation u-margin-top-huge">Discover all tours</a>
-
         </section>
       
-        <section class="section-stories">
+        <section class="section-stories" id="section-story">
             <div class="bg-video">
 
                 <video loop muted autoplay poster="img/videoframe.jpg" class="bg-video__content">
@@ -321,84 +316,31 @@
                     </div>
                 </div>
             </div>
-            <div class="u-text-center u-margin-top-huge">
-                <a href="#" class="btn-text">Learn more &rarr; </a>
-            </div>
         </section>
-        <!-- <section class="section-book">
-            <div class="row">
-                <div class="book">
-                    <div class="book__form">
-                        <div class="u-margin-bottom-medium">
-                            <h2 class="heading-secondary">
-                                Start booking now
-                            </h2>
-                        </div>
-                        <form action="#" class="form">
-                            <div class="form__group">
-                                <input class="form__input" type="text" placeholder="Full name" required id="name">
-                                <label class="form__label" for="name">Full name</label>
-                            </div>
-                            <div class="form__group">
-                                <input class="form__input" type="email" placeholder="Email address" required id="email">
-                                <label class="form__label" for="email">Email address</label>
-                            </div>
-                            <div class="form__group">
-                                <div class="form__radio-group">
-
-                                    <input class="form__radio-input" type="radio" id="small" name="size">
-                                    <label class="form__radio-label" for="small">
-                                        <span class="form__radio-button"></span>
-                                        Small tour program</label>
-
-                                </div>
-                                <div class="form__radio-group">
-                                    <input class="form__radio-input" type="radio" id="large" name="size">
-                                    <label class="form__radio-label" for="large">
-                                        <span class="form__radio-button"></span>
-                                        Large tour program
-                                    </label>
-                                </div>
-
-                            </div>
-
-                            <button class="btn btn--green btn--animation u-margin-top-small">Next step &rarr; </button>
-
-                        </form>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </section> -->
-
-
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__logo">
             <img src="img/Photo_094.jpg" alt="logo-img" class="footer__logo-img">
         </div>
-
         <div class="row">
             <div class="col-1-of-2">
                 <div class="footer__nav">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Company</a>
+                            <a href="#" class="footer__link">Home</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Contact us</a>
+                            <a href="#" class="footer__link">Facebook</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Careers</a>
+                            <a href="#" class="footer__link">Youtube</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Privacy policy</a>
+                            <a href="#" class="footer__link">Instagram</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Terms</a>
+                            <a href="assets/Milan.Kotarli-CV.pdf" class="footer__link">Get CV</a>
                         </li>
                     </ul>
                 </div>
@@ -407,23 +349,13 @@
             <div class="col-1-of-2">
                 <div class="footer__copyright">
                     <p class="footer__copyright-text">
-                        Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a
-                            href="#" class="footer__link">advanced css and sass</a>. Copyright © by Jonas
-                        Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but
-                        NOT to
-                        claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course
-                        highly
-                        appreciated!
+                        Built by <a href="#" class="footer__link">Milan Kotarlić</a> for portfolio about <a
+                            href="#" class="footer__link">advanced css and sass</a>. Copyright © and design by Jonas
+                        Schmedtmann. A credit to the original author, Jonas Schmedtmann! 
                     </p>
                 </div>
-
             </div>
         </div>
-
-
-
-
-
     </footer>
 
 
@@ -467,8 +399,6 @@
 
                 <a href="#header"  class="btn btn--green u-margin-top-small">Book now</a>
             </div>
-
-
         </div>
     </div>
 

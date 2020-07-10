@@ -55,7 +55,6 @@
         top: 0;
         right: -60rem;
         z-index: 1500;
-        //display:none;
         opacity: 0;
         width: 0;
         transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -70,12 +69,9 @@
         transform: translate(-50%, -50%);
         list-style-type: none;
         text-align: center;
-
-
     }
 
     &__item {
-
         margin: 1rem;
     }
 
@@ -91,20 +87,20 @@
             text-transform: uppercase;
             font-weight: 300;
             transition: all .4s;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%, );
-            background-size: 220%;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-secondary-light 50%, );
+            background-size: 230%;
 
             span {
                 margin-right: 1.5rem;
                 display: inline-block;
             }
         }
-
+       
         &:hover {
             transform: translateX(1rem);
             color: $color-primary-light;
             background-position: 100%;
-
+            box-shadow: 0 2px 5px 3px rgba($color-white, 0.2);
         }
 
         &:focus {
@@ -112,7 +108,6 @@
             background-position: 100%;
             color: $color-primary-light;
         }
-
     }
 
     //FUNCTIONALITY
@@ -126,8 +121,7 @@
         width: 100%;
         right: 0;
     }
-
-
+    
     //ICON
     &__icon {
         position: relative;
@@ -159,15 +153,7 @@
             top: .8rem;
         }
     }
-//optional hover - (making width problems)
-/*    &__button:hover &__icon::before {
-        top: -1rem;
-    }
-
-    &__button:hover &__icon::after {
-        top: 1rem;
-    }*/
-
+    
     &__checkbox:checked+&__button &__icon {
         background-color: transparent;
     }

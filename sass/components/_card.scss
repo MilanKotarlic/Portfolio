@@ -125,8 +125,7 @@
 
     &__details {
         font-size: 2rem;
-
-        padding: 3rem;
+        padding: 2rem;
 
         ul {
             list-style: none;
@@ -147,9 +146,17 @@
     }
 
     &__cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
         @include center;
         font-size: $default-font-size;
         width: 90%;
+
+        .btn {
+            align-self: center;
+        }
 
     }
 }
