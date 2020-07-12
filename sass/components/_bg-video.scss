@@ -6,6 +6,10 @@
         height: 100%;
         z-index: -1;
         overflow: hidden;
+
+        @include mq($phone) {
+            display: none;
+        }
     }
     .bg-video__content {
         object-fit: cover;

@@ -2,6 +2,10 @@
       background-color: $color-primary;
       height: 45rem;
       padding: 5rem;
+
+      @include mq($phone) {
+          display: none;
+      }
     .image-slider__box { 
         height: 30rem;
         width: 70%;

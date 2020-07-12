@@ -497,6 +497,9 @@ body {
   height: 100%;
   z-index: -1;
   overflow: hidden; }
+  @media screen and (max-width: 640px) {
+    .bg-video {
+      display: none; } }
 
 .bg-video__content {
   object-fit: cover;
@@ -698,6 +701,9 @@ body {
   background-color: #1d1d1d;
   height: 45rem;
   padding: 5rem; }
+  @media screen and (max-width: 640px) {
+    .image-slider {
+      display: none; } }
   .image-slider .image-slider__box {
     height: 30rem;
     width: 70%;
