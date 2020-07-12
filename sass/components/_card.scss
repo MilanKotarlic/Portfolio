@@ -4,6 +4,15 @@
     position: relative;
     height: 52rem;
 
+    @include mq($tablet) {
+        width: 50%;
+        justify-self: center;
+    }
+
+    @include mq($phone-sm) {
+        width: 65%;
+    }
+
 
     &__side {
         height: 52rem;

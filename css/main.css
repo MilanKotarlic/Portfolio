@@ -211,7 +211,11 @@ body {
     @media screen and (max-width: 1250px) {
       .section-about__content {
         grid-template-columns: repeat(2, 1fr);
-        padding: 15rem; } }
+        padding: 0 15rem; } }
+    @media screen and (max-width: 991px) {
+      .section-about__content {
+        grid-template-columns: 1fr;
+        padding: 0; } }
 
 .section-stories {
   display: flex;
@@ -367,6 +371,13 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem; }
+  @media screen and (max-width: 991px) {
+    .card {
+      width: 50%;
+      justify-self: center; } }
+  @media screen and (max-width: 480px) {
+    .card {
+      width: 65%; } }
   .card__side {
     height: 52rem;
     border-radius: 3px;

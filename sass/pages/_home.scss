@@ -34,8 +34,13 @@
 
         @include mq($lap-small) {
             grid-template-columns: repeat(2, 1fr);
-            padding: 15rem;
-        }        
+            padding: 0 15rem;
+        }      
+        
+        @include mq($tablet) {
+            grid-template-columns: 1fr;
+            padding: 0;
+        }  
     }
 }
 
