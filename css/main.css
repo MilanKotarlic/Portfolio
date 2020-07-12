@@ -198,12 +198,20 @@ body {
 
 .section-about {
   background-image: linear-gradient(to top, rgba(56, 56, 56, 0.8), #111111);
-  padding: 15rem 0 15rem 0;
+  padding: 15rem 6rem;
   text-align: center;
   box-shadow: -1px 0px 15px 9px rgba(0, 0, 0, 0.75); }
   @media screen and (max-width: 640px) {
     .section-about {
       padding: 7rem 0; } }
+  .section-about__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 3rem; }
+    @media screen and (max-width: 1250px) {
+      .section-about__content {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15rem; } }
 
 .section-stories {
   display: flex;
