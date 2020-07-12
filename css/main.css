@@ -1103,6 +1103,9 @@ body {
       content: '060/0118254'; }
     .footer .phone__link:hover::after {
       display: inline-block; }
+      @media screen and (max-width: 991px) {
+        .footer .phone__link:hover::after {
+          display: none; } }
   .footer .footer__copyright {
     float: right;
     padding-top: 2rem;

@@ -91,6 +91,10 @@
         }
         &:hover::after {
             display: inline-block;
+
+            @include mq($tablet) {
+                display: none;
+            }
             
         }
     }
