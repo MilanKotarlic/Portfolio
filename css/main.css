@@ -853,10 +853,13 @@ body {
   top: 6.8rem;
   left: 16rem;
   animation-name: moveInLeftAndDisappear;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-delay: 2.3s;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(1, -0.14, 1, -0.03); }
+  @media screen and (max-width: 991px) {
+    .speech-bubble {
+      top: 4.6rem; } }
   .speech-bubble__text {
     display: flex;
     flex-direction: column;
