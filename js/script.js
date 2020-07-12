@@ -7,6 +7,7 @@ $(window).on("load", function () {
 $(document).ready(function(){
   $('.image-slider__box').slick({
       infinite: true,
+      arrows: false,
       centerMode: true,
       centerPadding: '30rem',
       slidesToShow: 1,

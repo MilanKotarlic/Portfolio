@@ -208,6 +208,10 @@ body {
   .section-stories .heading-secondary {
     margin-left: 5rem;
     margin-bottom: 5rem; }
+    @media screen and (max-width: 640px) {
+      .section-stories .heading-secondary {
+        margin-left: 0;
+        text-align: center; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -441,6 +445,12 @@ body {
   transform: skewX(-12deg);
   font-size: 1.6rem;
   margin-bottom: 5rem; }
+  @media screen and (max-width: 640px) {
+    .story {
+      width: 80%;
+      transform: none;
+      align-self: center;
+      padding: 3rem; } }
   .story:hover .story__person {
     top: 50%;
     opacity: 1; }
@@ -449,8 +459,14 @@ body {
     filter: blur(3px) brightness(80%); }
   .story--1 {
     margin-left: 15rem; }
+    @media screen and (max-width: 640px) {
+      .story--1 {
+        margin-left: 0; } }
   .story--2 {
     margin-left: 30rem; }
+    @media screen and (max-width: 640px) {
+      .story--2 {
+        margin-left: 0; } }
   .story__person {
     position: absolute;
     top: 100%;
@@ -479,6 +495,9 @@ body {
     transform: translateX(-1rem) skewX(12deg);
     z-index: 100;
     backface-visibility: hidden; }
+    @media screen and (max-width: 640px) {
+      .story__shape {
+        transform: skewX(0deg); } }
   .story__image {
     transform: translateX(-4rem) scale(1.3);
     height: 100%;
@@ -486,6 +505,9 @@ body {
     transition: all 0.5s; }
   .story__text {
     transform: skewX(12deg); }
+    @media screen and (max-width: 640px) {
+      .story__text {
+        transform: none; } }
   .story__btn {
     color: green; }
 
@@ -727,9 +749,6 @@ body {
   background-position: center;
   position: relative;
   box-shadow: 0px 14px 40px 15px rgba(0, 0, 0, 0.75); }
-  @media screen and (max-width: 640px) {
-    .header {
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4.8rem;
