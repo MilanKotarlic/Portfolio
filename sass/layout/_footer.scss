@@ -1,4 +1,6 @@
 .footer {
+    display: flex;
+    flex-direction: column;
     padding: 10rem 0;
     background-color: $color-grey-darker;
     font-size: 1.4rem;
@@ -9,6 +11,12 @@
     }
 
     .footer__logo {
+        display: inline-block;
+        align-self: center;
+        width: 8rem;
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        position: relative;
         text-align: center;
         margin-bottom: 8rem;
         height: 7rem;
@@ -16,11 +24,18 @@
         object-position: center center;
         cursor: pointer;
         img {
+            position: absolute;
+            top: 0;
+            left: 0;
             height: 8rem;
             clip-path: circle(47% at 50% 50%);  
             z-index: 100;
-           
+            transition: all 0.5s ease;
+        &:hover {
+            transform: rotatey(-180deg);  
+    }
         }
+        
     }
     .footer__nav {
         padding-top: 2rem;
@@ -53,7 +68,7 @@
         background-color: $color-grey-darker;
         transition: all .2s;
         &:hover {
-            transform: scale(1.3) rotate(7deg);
+            transform: scale(1.3);
             color: $color-secondary-light;
            box-shadow: 0 1rem 2rem rgba($color-black, .5);
         }
@@ -63,6 +78,20 @@
             height: 5rem;
             width: 5rem;
             object-fit: cover;
+        }
+    }
+    .phone__link {
+        position: relative;
+        &::after {
+            display: none;
+            position: absolute;
+            left: 5rem;
+            top: -1rem;
+            content: '060/0118254';
+        }
+        &:hover::after {
+            display: inline-block;
+            
         }
     }
     .footer__copyright {
