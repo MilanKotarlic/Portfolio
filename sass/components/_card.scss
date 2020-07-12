@@ -45,7 +45,20 @@
         transform: rotatey(0);
 
     }
+    &__pointer {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        font-size: 3rem;
+        font-weight: 900;
+        color: $color-secondary-light;
 
+        @include mq($tablet) {
+            display: inline-block;
+        } 
+
+    }
     &__picture {
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);

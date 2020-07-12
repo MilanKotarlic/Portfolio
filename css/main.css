@@ -379,6 +379,17 @@ body {
     transform: rotatey(-180deg); }
   .card:hover .card__side--back {
     transform: rotatey(0); }
+  .card__pointer {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffb900; }
+    @media screen and (max-width: 991px) {
+      .card__pointer {
+        display: inline-block; } }
   .card__picture {
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
