@@ -12,7 +12,7 @@
         margin: 0 auto;
         transition: ease;    
         .image-slider__img {
-            object-fit: cover;
+            object-fit: contain;
             object-position: center center;
             width: 20rem;
             height: 30rem;

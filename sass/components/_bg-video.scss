@@ -7,7 +7,7 @@
         z-index: -1;
         overflow: hidden;
 
-        @include mq($phone) {
+        @include mq($tablet) {
             display: none;
         }
     }

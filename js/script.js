@@ -15,6 +15,26 @@ $(document).ready(function(){
       autoplay: true,
       autoplaySpeed: 3000,
       cssEase: 'ease-in',
+      responsive: [
+        {
+            breakpoint: 1400,
+            settings: {
+                centerPadding: '25rem',
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                centerPadding: '22rem',
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                centerPadding: 0,
+            }
+        },
+    ]
     });
   });
 
