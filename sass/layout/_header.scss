@@ -1,12 +1,10 @@
 .header {
-
     height: 80rem;
     background-image:
       linear-gradient(to right bottom,
              rgba($color-primary-light, 0.8),
              rgba($color-primary-dark, 0.8)),
          url(../img/hero.jpg);
-    //  clip-path: polygon(0 0, 100% 0, 100% 81rem, 0 100%);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -17,12 +15,9 @@
     }
 
     @include mq($phone-sm) {
-        height: 60rem;
+        background-position: right;
     }
-    
-    @include mq($phone-xs) {
-        height: 50rem;
-    }
+
 
     &__logo-box {
         position: absolute;

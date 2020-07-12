@@ -8,6 +8,10 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+
+    @include mq($phone) {
+        padding: 7rem 0;
+    }
     
 }
 
@@ -17,8 +21,11 @@
     rgba($color-primary-dark, 1));
     padding:15rem 0 15rem 0; 
     text-align: center;
-    box-shadow: 0px -4px 40px 15px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.75);
     
+    @include mq($phone) {
+        padding: 7rem 0;
+    }
 }
 
 .section-stories {
@@ -27,6 +34,11 @@
     padding: 15rem 0;
     position: relative;
     background-color: rgba($color-primary-light, 0.7);
+
+    @include mq($phone) {
+        padding: 7rem 0;
+        background-image: url(https://cdn.pixabay.com/photo/2018/03/23/23/55/white-dice-3255317_960_720.png);
+    }
 
     .heading-secondary {
         margin-left: 5rem;

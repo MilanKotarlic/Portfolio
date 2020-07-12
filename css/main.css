@@ -192,12 +192,18 @@ body {
   background-size: cover;
   background-position: top;
   background-attachment: fixed; }
+  @media screen and (max-width: 640px) {
+    .section-features {
+      padding: 7rem 0; } }
 
 .section-about {
   background-image: linear-gradient(to top, rgba(56, 56, 56, 0.8), #111111);
   padding: 15rem 0 15rem 0;
   text-align: center;
-  box-shadow: 0px -4px 40px 15px rgba(0, 0, 0, 0.75); }
+  box-shadow: -1px 0px 15px 9px rgba(0, 0, 0, 0.75); }
+  @media screen and (max-width: 640px) {
+    .section-about {
+      padding: 7rem 0; } }
 
 .section-stories {
   display: flex;
@@ -205,6 +211,10 @@ body {
   padding: 15rem 0;
   position: relative;
   background-color: rgba(56, 56, 56, 0.7); }
+  @media screen and (max-width: 640px) {
+    .section-stories {
+      padding: 7rem 0;
+      background-image: url(https://cdn.pixabay.com/photo/2018/03/23/23/55/white-dice-3255317_960_720.png); } }
   .section-stories .heading-secondary {
     margin-left: 5rem;
     margin-bottom: 5rem; }
@@ -755,10 +765,7 @@ body {
       height: 70rem; } }
   @media screen and (max-width: 480px) {
     .header {
-      height: 60rem; } }
-  @media screen and (max-width: 360px) {
-    .header {
-      height: 50rem; } }
+      background-position: right; } }
   .header__logo-box {
     position: absolute;
     top: 4.8rem;
