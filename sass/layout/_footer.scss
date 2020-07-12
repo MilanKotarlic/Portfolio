@@ -2,14 +2,20 @@
     display: flex;
     flex-direction: column;
     padding: 10rem 0;
-    background-color: $color-grey-darker;
+    background-image: linear-gradient(to top,
+    rgba($color-primary, 0.8),
+    rgba($color-primary-dark, 1));
     font-size: 1.4rem;
     color: $color-white;
+    box-shadow: -1px 10px 39px 53px rgba($color-primary-dark, 1);
+    z-index: 10;
 
     @include mq($tablet) {
         padding: 8rem 0;
     }
-
+    .row {
+        width: 100%;
+    }
     .footer__logo {
         display: inline-block;
         align-self: center;
@@ -45,6 +51,7 @@
         @include mq($tablet) {
             width: 100%;
             text-align: center;
+            padding-top: 6rem;
         }
     }
     .footer__list {
@@ -107,6 +114,7 @@
         @include mq($tablet) {
             width: 100%;
             float: none;
+            padding-top: 6rem;
         }
     }
 }

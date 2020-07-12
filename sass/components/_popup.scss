@@ -21,42 +21,61 @@
     }
    
     .popup__content {
-        display: flex;
-        flex-direction: row;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(.1);
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
-        width: 75%;
+        width: 65%;
         background-color: $color-white;
         border-radius: 3px;
         margin: auto;
         overflow: hidden;
-        max-height: 70%;
+        max-height: 80%;
         transition: all .5s .2s;
         opacity: 0;
-       
-    }
-    .popup__content-left {
-        display: flex;
-        flex-direction: column;
-        width: 33.333333%;  
-        
+        padding: 0 6rem;
+
+        @include mq($tablet) {
+            padding: 0 3rem;
+        }
+
+        @include mq($phone) {
+            width: 90%;
+        }
+
+        @include mq($phone-sm) {
+            padding: 0;
+   
+        }
     }
 
     .popup__content-image {
         display: block;
         width: 100%;
         height: 50%; 
+        object-fit: cover;
+
+        @include mq($phone-md) {
+            height: auto;
+            width: 50%;
+            object-fit: cover;
+        }
+
+      
     }
 
-    .popup__content-right {
+    .popup__content-inner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 2rem;
-        width: 66.6666667%;
+        width: 100%;
+        height: auto;
+
+        @include mq($phone-md) {
+           width: 100%;
+        }
         
         .btn, .heading-secondary {
             align-self: flex-start;
@@ -73,8 +92,8 @@
 
     .popup-close {
         position: absolute;
-        top: 25px;
-        right: 25px;
+        top: 5px;
+        right: 15px;
         font-size: 2rem;
         text-decoration: none;
         font-weight: 900;
