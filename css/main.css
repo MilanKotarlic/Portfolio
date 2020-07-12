@@ -211,7 +211,8 @@ body {
     @media screen and (max-width: 640px) {
       .section-stories .heading-secondary {
         margin-left: 0;
-        text-align: center; } }
+        text-align: center;
+        padding: 0 3rem; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -749,6 +750,15 @@ body {
   background-position: center;
   position: relative;
   box-shadow: 0px 14px 40px 15px rgba(0, 0, 0, 0.75); }
+  @media screen and (max-width: 640px) {
+    .header {
+      height: 70rem; } }
+  @media screen and (max-width: 480px) {
+    .header {
+      height: 60rem; } }
+  @media screen and (max-width: 360px) {
+    .header {
+      height: 50rem; } }
   .header__logo-box {
     position: absolute;
     top: 4.8rem;
@@ -768,10 +778,13 @@ body {
     z-index: 100; }
   .header__text-box {
     position: absolute;
-    top: 38%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media screen and (max-width: 640px) {
+      .header__text-box {
+        top: 65%; } }
 
 .speech-bubble {
   opacity: 0;

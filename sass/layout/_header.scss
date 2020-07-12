@@ -12,6 +12,18 @@
     position: relative;
     box-shadow: 0px 14px 40px 15px rgba(0,0,0,0.75);
 
+    @include mq($phone) {
+        height: 70rem;
+    }
+
+    @include mq($phone-sm) {
+        height: 60rem;
+    }
+    
+    @include mq($phone-xs) {
+        height: 50rem;
+    }
+
     &__logo-box {
         position: absolute;
         top: 4.8rem;
@@ -35,10 +47,14 @@
 
     &__text-box {
         position: absolute;
-        top: 38%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        @include mq($phone) {
+            top: 65%;
+        }
     }
 
 }
