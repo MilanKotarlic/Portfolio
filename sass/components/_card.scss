@@ -13,7 +13,6 @@
         width: 65%;
     }
 
-
     &__side {
         height: 52rem;
         border-radius: 3px;
@@ -38,13 +37,12 @@
 
     &:hover &__side--front {
         transform: rotatey(-180deg);
-
     }
 
     &:hover &__side--back {
         transform: rotatey(0);
-
     }
+
     &__pointer {
         display: none;
         position: absolute;
@@ -56,9 +54,9 @@
 
         @include mq($tablet) {
             display: inline-block;
-        } 
-
+        }
     }
+
     &__picture {
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -101,12 +99,8 @@
         width: 75%;
         font-weight: 300;
 
-
         &-span {
-
             padding: 1rem 1.5rem;
-
-
             -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
 
@@ -170,6 +164,5 @@
         .btn {
             align-self: center;
         }
-
     }
 }

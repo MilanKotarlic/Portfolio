@@ -1,5 +1,5 @@
 .section-features {
-    padding:15rem 0;
+    padding: 15rem 0;
     text-align: center;
     background-image: linear-gradient(to top,
             rgba($color-primary-light, 0.2),
@@ -12,35 +12,34 @@
     @include mq($phone) {
         padding: 7rem 0;
     }
-    
 }
 
 .section-about {
     background-image: linear-gradient(to top,
-    rgba($color-primary-light, 0.8),
-    rgba($color-primary-dark, 1));
-    padding:15rem 6rem; 
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 1));
+    padding: 15rem 6rem;
     text-align: center;
-    box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.75);
-    
+    box-shadow: -1px 0px 15px 9px rgba(0, 0, 0, 0.75);
+
     @include mq($phone) {
         padding: 7rem 0;
     }
 
     &__content {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 3rem;
 
         @include mq($lap-small) {
             grid-template-columns: repeat(2, 1fr);
             padding: 0 15rem;
-        }      
-        
+        }
+
         @include mq($tablet) {
             grid-template-columns: 1fr;
             padding: 0;
-        }  
+        }
     }
 }
 
@@ -50,10 +49,11 @@
     padding: 15rem 0;
     position: relative;
     background-color: rgba($color-primary-light, 0.7);
+
     @include mq($tablet) {
         background-image: url(https://cdn.pixabay.com/photo/2018/03/23/23/55/white-dice-3255317_960_720.png);
     }
-    
+
     @include mq($phone) {
         padding: 7rem 0;
     }
@@ -68,6 +68,4 @@
             padding: 0 3rem;
         }
     }
-
 }
-
