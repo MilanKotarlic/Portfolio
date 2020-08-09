@@ -8,6 +8,7 @@
     transform: skewX(-12deg);
     font-size: $default-font-size;
     margin-bottom: 5rem;
+    max-width: 130rem;
 
     @include mq($phone) {
         width: 80%;
@@ -97,6 +98,6 @@
     }
 
     &__btn {
-        color: green;
+        color: $color-quaternary-dark;
     }
 }

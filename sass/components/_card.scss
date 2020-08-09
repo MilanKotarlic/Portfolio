@@ -13,6 +13,10 @@
         width: 65%;
     }
 
+    @include mq($phone-xs) {
+        width: 80%;
+    }
+
     &__side {
         height: 52rem;
         border-radius: 3px;

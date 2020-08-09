@@ -10,18 +10,19 @@ html {
     font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 
     @include mq($tablet-l) {
-        font-size: 56.25%;
+        font-size: 59.25%;
     }
     
     @include mq($tablet) {
-        font-size: 50%;
+        font-size: 57%;
     }
+
     @include mq($phone) {
-        font-size: 45%;
+        font-size: 50%;
     }
 
     @include mq-large($big-desktop) {
-        font-size: 75%;
+        font-size: 70%;
     }
 }
 
