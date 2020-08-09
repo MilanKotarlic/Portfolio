@@ -753,6 +753,7 @@ body {
   right: 2rem;
   width: 55px;
   height: 55px;
+  opacity: 0;
   z-index: 5;
   margin: 0; }
   @media screen and (max-width: 991px) {

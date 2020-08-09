@@ -58,3 +58,13 @@ function checkAll() {
      }
   isChecked = !isChecked;
  }
+
+ 
+ $(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = $(window).height();
+
+    $('.arrow__wrapper').css({
+        'opacity': ((0 + scrollTop) / height)
+    }); 
+});
