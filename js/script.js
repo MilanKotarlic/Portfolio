@@ -8,13 +8,15 @@ $(document).ready(function(){
   $('.image-slider__box').slick({
       infinite: true,
       arrows: false,
+      dots: true,
       centerMode: true,
-      centerPadding: '30rem',
+      centerPadding: '35rem',
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000,
-      cssEase: 'ease-in',
+      infinite: true,
+      cssEase: 'linear',
+      autoplaySpeed: 2000,
       responsive: [
         {
             breakpoint: 1400,
