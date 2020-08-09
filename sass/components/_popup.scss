@@ -31,7 +31,7 @@
         background-color: $color-white;
         border-radius: 3px;
         margin: auto;
-        overflow: hidden;
+        overflow: auto;
         max-height: 80%;
         transition: all .5s .2s;
         opacity: 0;
@@ -95,6 +95,10 @@
     .popup__content-buttons {
         display: flex;
         justify-content: space-around;
+
+        @include mq($phone-xs) {
+            flex-direction: column;
+        }
     }
 
     .popup-close {

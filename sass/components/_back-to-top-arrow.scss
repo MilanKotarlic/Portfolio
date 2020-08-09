@@ -41,22 +41,22 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: #ffb900;
-    opacity: 0.5;
+    background-color: rgba($color-secondary-light, 0.2);
     border-radius: 5px;
     transform: rotateZ(-10deg);
     transition: all 0.3s ease;
   
   &:hover {
     transform: rotateZ(0deg) translateY(5px);
-    opacity: 1;
+    background-color: rgba($color-secondary-light, 1);
   }
 }
 
   .arrow-image {
+    display: block;
     object-fit: cover;
     transform: rotatez(180deg);
-    width: 100%;
-    height: 100%;
-    
+    width: 80%;
+    height: 90%;
+    margin: auto;
   }

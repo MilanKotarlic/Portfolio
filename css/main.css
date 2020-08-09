@@ -368,6 +368,8 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
+  .feature-box__title {
+    color: #ffb900; }
   .feature-box:hover {
     transform: scale(1.03) translateY(-1.5rem); }
 
@@ -606,7 +608,7 @@ body {
     background-color: #fff;
     border-radius: 3px;
     margin: auto;
-    overflow: hidden;
+    overflow: auto;
     max-height: 80%;
     transition: all .5s .2s;
     opacity: 0;
@@ -655,6 +657,9 @@ body {
   .popup .popup__content-buttons {
     display: flex;
     justify-content: space-around; }
+    @media screen and (max-width: 360px) {
+      .popup .popup__content-buttons {
+        flex-direction: column; } }
   .popup .popup-close {
     position: absolute;
     top: 5px;
@@ -777,20 +782,21 @@ body {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-color: #ffb900;
-  opacity: 0.5;
+  background-color: rgba(255, 185, 0, 0.2);
   border-radius: 5px;
   transform: rotateZ(-10deg);
   transition: all 0.3s ease; }
   .arrow:hover {
     transform: rotateZ(0deg) translateY(5px);
-    opacity: 1; }
+    background-color: #ffb900; }
 
 .arrow-image {
+  display: block;
   object-fit: cover;
   transform: rotatez(180deg);
-  width: 100%;
-  height: 100%; }
+  width: 80%;
+  height: 90%;
+  margin: auto; }
 
 .header {
   height: 80rem;
