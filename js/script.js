@@ -59,7 +59,7 @@ function checkAll() {
   isChecked = !isChecked;
  }
 
- 
+ //Back to top arrow fade-in
  $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     var height = $(window).height();

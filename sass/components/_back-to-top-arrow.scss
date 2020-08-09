@@ -14,8 +14,8 @@
         bottom: 1.8rem;
     }
     @include mq($phone) {
-        right: 1.5rem;
-        bottom: 1.5rem;
+        right: 0.5rem;
+        bottom: 0.5rem;
     }
 
 
@@ -46,10 +46,20 @@
     border-radius: 5px;
     transform: rotateZ(-10deg);
     transition: all 0.3s ease;
+
+    @include mq($phone) {
+      width: 40px;
+      height: 40px;
+    }
   
   &:hover {
     transform: rotateZ(0deg) translateY(5px);
     background-color: rgba($color-secondary-light, 1);
+
+    @include mq($tablet-sm) {
+      background-color: rgba($color-secondary-light, 0.2);
+      transform: rotateZ(-10deg);
+    }
   }
 }
 

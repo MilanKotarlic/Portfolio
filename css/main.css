@@ -762,8 +762,8 @@ body {
       bottom: 1.8rem; } }
   @media screen and (max-width: 640px) {
     .arrow__wrapper {
-      right: 1.5rem;
-      bottom: 1.5rem; } }
+      right: 0.5rem;
+      bottom: 0.5rem; } }
   .arrow__wrapper::after {
     content: '';
     position: absolute;
@@ -787,9 +787,17 @@ body {
   border-radius: 5px;
   transform: rotateZ(-10deg);
   transition: all 0.3s ease; }
+  @media screen and (max-width: 640px) {
+    .arrow {
+      width: 40px;
+      height: 40px; } }
   .arrow:hover {
     transform: rotateZ(0deg) translateY(5px);
     background-color: #ffb900; }
+    @media screen and (max-width: 767px) {
+      .arrow:hover {
+        background-color: rgba(255, 185, 0, 0.2);
+        transform: rotateZ(-10deg); } }
 
 .arrow-image {
   display: block;
