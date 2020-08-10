@@ -12,6 +12,16 @@
         font-size: $default-font-size;
         border: none;
         cursor: pointer;
+
+        @include mq($tablet-sm) {
+            padding: 1.3rem 3.5rem;
+            font-size: 1.5rem;
+        }
+
+        @include mq($phone-xs) {
+            padding: 1rem 3rem;
+            font-size: 1.4rem;
+        }
     }
 
     &:hover {

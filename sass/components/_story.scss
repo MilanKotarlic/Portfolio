@@ -10,11 +10,19 @@
     margin-bottom: 5rem;
     max-width: 130rem;
 
+    @include mq($tablet-sm) {
+        width: 70%;
+    }
+
     @include mq($phone) {
         width: 80%;
         transform: none;
         align-self: center;
         padding: 3rem;
+    }
+
+    @include mq($phone-xs) {
+        padding: 1.5rem;
     }
 
     &:hover .story__person {
@@ -37,6 +45,10 @@
 
     &--2 {
         margin-left: 30rem;
+
+        @include mq($tablet-sm) {
+            margin-left: 15rem;
+        }
 
         @include mq($phone) {
             margin-left: 0;
@@ -73,12 +85,20 @@
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        transform: translateX(-1rem) skewX(12deg);
+        transform: translateX(-3rem) skewX(12deg);
         z-index: 100;
         backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: 50%;
 
+    
         @include mq($phone) {
-            transform: skewX(0deg);
+            transform: skewX(0deg) translateX(-1rem);
+        }
+
+        @include mq($phone-xs) {
+            width: 12rem;
+            height: 12rem;
         }
     }
 

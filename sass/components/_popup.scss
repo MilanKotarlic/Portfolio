@@ -31,17 +31,21 @@
         background-color: $color-white;
         border-radius: 3px;
         margin: auto;
-        overflow: auto;
+        overflow: hidden;
         max-height: 80%;
         transition: all .5s .2s;
         opacity: 0;
         padding: 0 6rem;
 
+        @include mq-large($big-desktop) {
+            width: 95rem;
+        }
+
         @include mq($tablet) {
             padding: 0 3rem;
         }
 
-        @include mq($phone) {
+        @include mq($tablet-sm) {
             width: 90%;
         }
 
@@ -95,10 +99,6 @@
     .popup__content-buttons {
         display: flex;
         justify-content: space-around;
-
-        @include mq($phone-xs) {
-            flex-direction: column;
-        }
     }
 
     .popup-close {
