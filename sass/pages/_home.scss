@@ -1,5 +1,5 @@
 .section-features {
-    padding: 15rem 0;
+    padding: 9rem 0;
     text-align: center;
     background-image: linear-gradient(to top,
             rgba($color-primary-light, 0.2),
@@ -18,7 +18,7 @@
     background-image: linear-gradient(to top,
             rgba($color-primary-light, 0.8),
             rgba($color-primary-dark, 1));
-    padding: 15rem 6rem;
+    padding: 9rem 6rem;
     text-align: center;
     box-shadow: -1px 0px 15px 9px rgba(0, 0, 0, 0.75);
 
@@ -46,7 +46,7 @@
 .section-stories {
     display: flex;
     flex-direction: column;
-    padding: 15rem 0;
+    padding: 9rem 0;
     position: relative;
     background-color: rgba($color-primary-light, 0.7);
 
@@ -61,6 +61,10 @@
     .heading-secondary {
         margin-left: 10rem;
         margin-bottom: 5rem;
+
+        @include mq-large($big-desktop) {
+            text-align: center;
+        }
 
         @include mq($phone) {
             margin-left: 0;

@@ -31,10 +31,18 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     margin: 0;
+
+    @include mq($phone) {
+      bottom: -33px;
+    }
 }
 
 &:hover::after {
       display: none;
+
+      @include mq($phone) {
+        display: block;
+      }
   }
 }
 

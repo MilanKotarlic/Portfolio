@@ -34,12 +34,13 @@
         transform: scale(0.95) translateX(-4rem);
         filter: blur(3px) brightness(80%);
     }
-
+    
     &--1 {
         margin-left: 15rem;
 
         @include mq($phone) {
-            margin-left: 0;
+            margin: auto;
+            margin-bottom: 2.5rem;
         }
     }
 
@@ -51,7 +52,7 @@
         }
 
         @include mq($phone) {
-            margin-left: 0;
+            margin: auto;
         }
     }
 

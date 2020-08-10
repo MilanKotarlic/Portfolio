@@ -10,18 +10,24 @@ $(document).ready(function(){
       arrows: false,
       dots: true,
       centerMode: true,
-      centerPadding: '35rem',
+      centerPadding: '45rem',
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       infinite: true,
       cssEase: 'linear',
-      autoplaySpeed: 2000,
+      autoplaySpeed: 1500,
       responsive: [
+        {
+            breakpoint: 1800,
+            settings: {
+                centerPadding: '30rem',
+            }
+        },
         {
             breakpoint: 1400,
             settings: {
-                centerPadding: '25rem',
+                centerPadding: '26rem',
             }
         },
         {
