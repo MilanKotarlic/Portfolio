@@ -12,6 +12,7 @@
         font-size: $default-font-size;
         border: none;
         cursor: pointer;
+        font-weight: bold;
 
         @include mq($tablet-sm) {
             padding: 1.3rem 3.5rem;
@@ -44,6 +45,8 @@
     &--alt {
         background-color: $color-secondary-light;
         color: $color-white;
+        font-weight: bold;
+        text-shadow: 4px 3px 6px rgba($color-black, 0.7);
         box-shadow: 0 0.5rem 1rem rgba($color-white, 0.2);
 
         &:hover {
