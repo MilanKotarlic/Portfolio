@@ -1,10 +1,16 @@
 .logo-wrapper {
-    position: absolute;
-    top: 25px;
-    left: 47%;
+    transform: translateX(60px);
+    text-align: center;
+    margin-top: 30px;
 
     @include mq($phone) {
-        display: none;
+        transform: scale(0.8) translateX(60px);
+       
+    }
+
+    @include mq($phone-md) {
+        transform: scale(0.7) translateX(60px);
+     
     }
 }
 
@@ -14,6 +20,10 @@
     position: relative;
     transition: all 0.5s ease;
     z-index: 2;
+
+    @include mq($phone) {
+        transform: rotateZ(-90deg) translatey(50px);
+    }
 }
 
 .logo-0:hover {
@@ -54,23 +64,30 @@
 
 .logo__1 {
     transform: matrix(1, 0.3, 0, 1, 0, 10);
+
+   
 }
 
 .logo__2 {
     transform: matrix(1, -0.3, 0, 1, 0, 5);
-
     text-align: end;
+
+   z-index: 1000;
+
 }
 
 .logo__3 {
     transform: matrix(1, 0.3, 0, 1, 0, 0);
 
+    
+
 }
 
 .logo__4 {
     transform: matrix(1, -0.3, 0, 1, 0, -5);
-
     text-align: end;
+
+ 
 }
 
 
@@ -80,7 +97,53 @@
     transform: translateX(-123px) rotate(-90deg);
     z-index: 0;
     transition: all 1s ease;
+
+    @include mq($phone) {
+        transform: translateX(-175px) rotate(-90deg);
+        background-color: $color-tertiary-dark;
+    }
 }
 
 
+.logo-0 {
 
+    .logo__1 {
+        transform: matrix(1, 0.3, 0, 1, 0, 10);
+    
+        @include mq($phone) {
+            transform: matrix(1, -0, 0, 1, 0, 40);
+        }
+    }
+    
+    .logo__2 {
+        transform: matrix(1, -0.3, 0, 1, 0, 5);
+        text-align: end;
+    
+        @include mq($phone) {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            z-index: 1000;
+    }
+    }
+    
+    .logo__3 {
+        transform: matrix(1, 0.3, 0, 1, 0, 0);
+    
+        @include mq($phone) {
+            transform: matrix(1, 0.5, 0, 1, 0, -10);
+        z-index: -2;
+        }
+    
+    }
+    
+    .logo__4 {
+        transform: matrix(1, -0.3, 0, 1, 0, -5);
+        text-align: end;
+    
+        @include mq($phone) {
+            z-index: -1;
+            transform: matrix(1, -0.5, 0, 1, 0, -50);
+        }
+    }
+    
+
+}

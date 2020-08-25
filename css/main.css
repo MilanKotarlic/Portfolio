@@ -861,12 +861,15 @@ body {
   margin: auto; }
 
 .logo-wrapper {
-  position: absolute;
-  top: 25px;
-  left: 47%; }
+  transform: translateX(60px);
+  text-align: center;
+  margin-top: 30px; }
   @media screen and (max-width: 640px) {
     .logo-wrapper {
-      display: none; } }
+      transform: scale(0.8) translateX(60px); } }
+  @media screen and (max-width: 576px) {
+    .logo-wrapper {
+      transform: scale(0.7) translateX(60px); } }
 
 .logo-0, .logo {
   display: inline-block;
@@ -874,6 +877,9 @@ body {
   position: relative;
   transition: all 0.5s ease;
   z-index: 2; }
+  @media screen and (max-width: 640px) {
+    .logo-0, .logo {
+      transform: rotateZ(-90deg) translatey(50px); } }
 
 .logo-0:hover {
   transform: rotateZ(-90deg) translatey(50px); }
@@ -910,7 +916,8 @@ body {
 
 .logo__2 {
   transform: matrix(1, -0.3, 0, 1, 0, 5);
-  text-align: end; }
+  text-align: end;
+  z-index: 1000; }
 
 .logo__3 {
   transform: matrix(1, 0.3, 0, 1, 0, 0); }
@@ -924,6 +931,39 @@ body {
   transform: translateX(-123px) rotate(-90deg);
   z-index: 0;
   transition: all 1s ease; }
+  @media screen and (max-width: 640px) {
+    .logo-1 {
+      transform: translateX(-175px) rotate(-90deg);
+      background-color: #5643fa; } }
+
+.logo-0 .logo__1 {
+  transform: matrix(1, 0.3, 0, 1, 0, 10); }
+  @media screen and (max-width: 640px) {
+    .logo-0 .logo__1 {
+      transform: matrix(1, 0, 0, 1, 0, 40); } }
+
+.logo-0 .logo__2 {
+  transform: matrix(1, -0.3, 0, 1, 0, 5);
+  text-align: end; }
+  @media screen and (max-width: 640px) {
+    .logo-0 .logo__2 {
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      z-index: 1000; } }
+
+.logo-0 .logo__3 {
+  transform: matrix(1, 0.3, 0, 1, 0, 0); }
+  @media screen and (max-width: 640px) {
+    .logo-0 .logo__3 {
+      transform: matrix(1, 0.5, 0, 1, 0, -10);
+      z-index: -2; } }
+
+.logo-0 .logo__4 {
+  transform: matrix(1, -0.3, 0, 1, 0, -5);
+  text-align: end; }
+  @media screen and (max-width: 640px) {
+    .logo-0 .logo__4 {
+      z-index: -1;
+      transform: matrix(1, -0.5, 0, 1, 0, -50); } }
 
 .header {
   height: 85rem;
