@@ -2,6 +2,10 @@
     position: absolute;
     top: 25px;
     left: 47%;
+
+    @include mq($phone) {
+        display: none;
+    }
 }
 
 .logo-0, .logo {

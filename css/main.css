@@ -862,6 +862,9 @@ body {
   position: absolute;
   top: 25px;
   left: 47%; }
+  @media screen and (max-width: 640px) {
+    .logo-wrapper {
+      display: none; } }
 
 .logo-0, .logo {
   display: inline-block;
