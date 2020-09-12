@@ -280,7 +280,7 @@ body {
   background-color: #ffb900;
   color: #fff;
   font-weight: bold;
-  text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2); }
   .btn--alt:hover {
     box-shadow: 0 10px 10px rgba(255, 255, 255, 0.2); }
