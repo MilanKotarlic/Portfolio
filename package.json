@@ -11,7 +11,7 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "gulp-watch-sass": "^1.4.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass": "^1.26.5"
   },
   "dependencies": {
