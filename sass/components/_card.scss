@@ -10,10 +10,6 @@
     }
 
     @include mq($phone-sm) {
-        width: 65%;
-    }
-
-    @include mq($phone-xs) {
         width: 80%;
     }
 
